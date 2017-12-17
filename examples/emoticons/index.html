@@ -1,0 +1,45 @@
+<!doctype html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+
+<body>
+<nav class="navigation">
+  <ul class="navigation__list">
+    <li class="navigation__item"><a href="/test" class="navigation__link">Test</a></li>
+    <li class="navigation__item"><a href="/emoticons" class="navigation__link">emoticons</a></li>
+    <li class="navigation__item"><a href="/chat" class="navigation__link">chat</a></li>
+    <li class="navigation__item"><a href="/chat-pair" class="navigation__link">chat-pair</a></li>
+  </ul>
+</nav>
+<div id="container">
+
+  <div id="options">
+    <input id="is-full-screen" type="checkbox" />
+    <label for="is-full-screen">Receive only</label>
+
+    <input id="is-audible" type="checkbox" />
+    <label for="is-audible">Audible range</label>
+
+    <input id="is-visualizer" type="checkbox" />
+    <label for="is-visualizer">Visualizer enabled</label>
+  </div>
+
+  <!-- Received emoticon goes here -->
+  <img id="received-emoticon" class="placeholder" src="img/placeholder.gif" />
+
+  <div id="select-emoticon">
+    <!-- Emoticon picker -->
+  </div>
+
+  <div id="mobile-warning">
+    Note: receiving may not work on your mobile browser due to
+    hardware/firmware limitations of the microphone.
+  </div>
+
+</div>
+
+<script src="build/all.bundle.js"></script>
+</body>
