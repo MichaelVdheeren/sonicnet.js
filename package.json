@@ -1,0 +1,36 @@
+{
+  "name": "sonicnet",
+  "version": "1.0.0",
+  "description": "using ultrasound to broadcast and receive data between nearby devices",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p",
+    "ws": "node ./server/server.js",
+    "server": "node ./server/express.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easingthemes/sonicnet.js.git"
+  },
+  "author": "Boris Smus",
+  "license": "Apache License",
+  "bugs": {
+    "url": "https://github.com/easingthemes/sonicnet.js/issues"
+  },
+  "homepage": "https://github.com/easingthemes/sonicnet.js#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "express": "^4.16.2",
+    "webpack": "^3.10.0",
+    "ws": "^3.3.2"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
+}
